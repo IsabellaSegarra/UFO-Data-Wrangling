@@ -4,6 +4,7 @@ subtitle: "Interpreting `{ggplot2}` code"
 description: "Assigned Wed 01/07/2026 | Due Wed 01/14/2026"
 author: "Your Name"
 toc: true
+code-line-numbers: true
 editor_options: 
   chunk_output_type: console
 ---
@@ -52,11 +53,11 @@ showtext::showtext_auto(enable = TRUE)
 
 1. **What is the author defining in lines 15-17? Where else in the code do these defined variables show up? What advantage(s) is there to defining these values here, as variables, rather than defining the values directly throughout the script?**
 
-    - Answer here
+    The author is defining graphical aesthetics that will remain consistent throughout the project. By making these pre-defined in the set-up for the project, the author can reference them as they build their data visualizations, streamling the process and eliminating repetitive code. 
 
 2. **In your own words, explain what the function, `font_add_google()`, does. What's the difference between the two arguments, `name` and `family`?**
 
-    - Answer here
+    - This is a function that searches Google adds fonts to your plots. The `name` argument is the Google Fonts name that will be searched and `family` specifies the font that R can understand. 
 
 ## II. Data wrangling
 
@@ -78,7 +79,7 @@ df_pop <- places |>
 
 3. **Describe what this data frame contains.**
 
-    - Answer here
+    - After importing the data and establishing plot aesthetics, the author proceeds to wrangle the data. The author proceeds to filter the `places` data frame to just the US region, and modifies the state column with the `str_replace` function to modify the state string pattern Aa to be both capitalized. The author then groups by state to obtain a sum of the population per state. In order to prevent `df_pop` from being grouped by state, the author ungroups. 
 
 ### ii. Create `df_us`
 
@@ -102,7 +103,7 @@ df_us <- ufo_sightings |>
 
 4. **Describe what this data frame contains.**
 
-    - Answer here
+    - After producing a dataframe with the total population per state, the author proceeds to create a dataframe with the `ufo_sightings` data. The author filters this data to the US and uses `str_replace` to update the state column similar to the `df_pop` dataframe. The 
 
 5. **What does `opacity_val` represent, and why is it calculated?**
 
