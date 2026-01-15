@@ -2,7 +2,7 @@
 title: "HW #1"
 subtitle: "Interpreting `{ggplot2}` code"
 description: "Assigned Wed 01/07/2026 | Due Wed 01/14/2026"
-author: "Your Name"
+author: "Isabella Segarra"
 toc: true
 code-line-numbers: true
 editor_options: 
