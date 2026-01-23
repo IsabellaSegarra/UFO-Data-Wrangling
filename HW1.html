@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
+<meta name="author" content="Isabella Segarra">
 <meta name="description" content="Assigned Wed 01/07/2026 | Due Wed 01/14/2026">
 
 <title>HW #1</title>
@@ -127,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Isabella Segarra </p>
           </div>
   </div>
     
@@ -190,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <ol type="1">
 <li><p><strong>What is the author defining in lines 15-17? Where else in the code do these defined variables show up? What advantage(s) is there to defining these values here, as variables, rather than defining the values directly throughout the script?</strong></p>
-<p>The author is defining graphical aesthetics that will remain consistent throughout the project. By making these pre-defined in the set-up for the project, the author can reference them as they build their data visualizations, streamling the process and eliminating repetitive code.</p></li>
+<p>The author is defining graphing aesthetics for that will remain consistent throughout the project. They create a color palette for everytime they call <code>alien</code>, annd use that to define the background color and accent color. By making these pre-defined in the set-up for the project, the author can reference them as they build their data visualizations, streamling the process and eliminating repetitive code.</p></li>
 <li><p><strong>In your own words, explain what the function, <code>font_add_google()</code>, does. What’s the difference between the two arguments, <code>name</code> and <code>family</code>?</strong></p>
 <ul>
 <li>This is a function that searches Google adds fonts to your plots. The <code>name</code> argument is the Google Fonts name that will be searched and <code>family</code> specifies the font that R can understand.</li>
@@ -423,7 +423,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="13" type="1">
 <li><p><strong>Consider the order of <code>geom_*()</code> layers in the the above plot (<code>plot_us</code>). Why did the author order the layers in this way?</strong></p>
 <ul>
-<li>The author orders them by first establishing one single rectangle, specifying its position and aesthetics. The author then layers on text for state and ufo sightings. Since ggplot layers on features, we need to establish the background shape and text and then use <code>geofacet::</code> package to facet by state on a map of the U.S.</li>
+<li>The author orders them by first establishing one single rectangle, specifying its position and aesthetics. The author then layers on text for state and ufo sightings. Since ggplot layers on features, we need to establish the background shape and text and then use <code>geofacet::</code> package to facet by state on a map of the U.S. The author orders the layers in this way because ggplot draws bottom layers first and top layers last.</li>
 </ul></li>
 </ol>
 </section>

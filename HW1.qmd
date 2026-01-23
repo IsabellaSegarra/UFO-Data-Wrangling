@@ -53,7 +53,7 @@ showtext::showtext_auto(enable = TRUE)
 
 1. **What is the author defining in lines 15-17? Where else in the code do these defined variables show up? What advantage(s) is there to defining these values here, as variables, rather than defining the values directly throughout the script?**
 
-    The author is defining graphical aesthetics that will remain consistent throughout the project. By making these pre-defined in the set-up for the project, the author can reference them as they build their data visualizations, streamling the process and eliminating repetitive code. 
+    The author is defining graphing aesthetics for  that will remain consistent throughout the project. They create a color palette for everytime they call `alien`, annd use that to define the background color and accent color. By making these pre-defined in the set-up for the project, the author can reference them as they build their data visualizations, streamling the process and eliminating repetitive code. 
 
 2. **In your own words, explain what the function, `font_add_google()`, does. What's the difference between the two arguments, `name` and `family`?**
 
@@ -294,7 +294,7 @@ plot_us <-  ggplot(df_us) +
 
 13. **Consider the order of `geom_*()` layers in the the above plot (`plot_us`). Why did the author order the layers in this way?**
 
-    - The author orders them by first establishing one single rectangle, specifying its position and aesthetics. The author then layers on text for state and ufo sightings. Since ggplot layers on features, we need to establish the background shape and text and then use `geofacet::` package to facet by state on a map of the U.S. 
+    - The author orders them by first establishing one single rectangle, specifying its position and aesthetics. The author then layers on text for state and ufo sightings. Since ggplot layers on features, we need to establish the background shape and text and then use `geofacet::` package to facet by state on a map of the U.S. The author orders the layers in this way because ggplot draws bottom layers first and top layers last. 
 
 ### iii. Build `plot_day`
 
